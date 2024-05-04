@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, type AstroUserConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
@@ -9,4 +9,4 @@ export default defineConfig({
   stylesheets: [
     'global.css',
   ]
-});
+} as AstroUserConfig);
