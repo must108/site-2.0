@@ -35,7 +35,7 @@ export function randomChoice(obj: any[]): any {
 }
 
 export function sleep(millisecond: number) {
-    return new Promise((resolve) => {
+    return new Promise<void>((resolve) => {
         setTimeout(() => resolve(), millisecond);
     });
 }
