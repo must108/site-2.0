@@ -15,6 +15,7 @@ export default {
 				'offline-color': '#80848E',
 				'idle-color': '#EFB040',
 				'dnd-color': '#ED3743',
+				'white': '#FFFFFF',
 			},
 		},
 	},
