@@ -8,6 +8,7 @@ const timeOptions = {
 
 export default function Time() {
     const [time, setTime] = useState('--:-- --');
+    
     useEffect(() => {
         setTime(new Intl.DateTimeFormat("en-US", timeOptions).format(new Date()));
         const interval = setInterval(() => {
