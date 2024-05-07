@@ -11,10 +11,6 @@ export default {
 			colors: {
 				'bg-black-1': '#09090B',
 				'button-color': '#222224',
-				'online-color': '#36A55F',
-				'offline-color': '#80848E',
-				'idle-color': '#EFB040',
-				'dnd-color': '#ED3743',
 				'white': '#FFFFFF',
 			},
 		},
