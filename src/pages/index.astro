@@ -1,7 +1,6 @@
 ---
 import Time from '../components/Time.tsx'
 import { BsDiscord, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { useLanyardWS } from 'use-lanyard';
 import { DISCORD_USER_ID } from '../lib/constants';
 
 const statusColors = {
@@ -21,8 +20,11 @@ const statusNames = {
 const res = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_USER_ID}`);
 const data = await res.json();
 
-const status = statusNames[data.data.discord_status as keyof typeof statusNames] || "offline";
-const color = statusColors[data.data.discord_status as keyof typeof statusNames] || "bg-gray-500";		
+// const status = statusNames[data.data.discord_status as keyof typeof statusNames] || "offline";
+// const color = statusColors[data.data.discord_status as keyof typeof statusNames] || "bg-gray-500";		
+
+const status = "offline";
+const color = "bg-gray-500";
 ---
 
 <html lang="en">
